@@ -1,0 +1,74 @@
+body {
+  font-family: sans-serif;
+  background-color: #0d1117;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  overflow-x: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.balance {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #58a6ff;
+}
+
+.heatmap-container {
+  display: grid;
+  grid-template-columns: repeat(15, auto);
+  gap: 10px;
+}
+
+.day-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.day {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: white; /* Default white */
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.label {
+  font-size: 10px;
+  color: #8b949e;
+  text-align: center;
+  width: 100%;
+}
+
+/* Profit and Loss colors */
+.profit {
+  background-color: #2ecc71;
+}
+
+.loss {
+  background-color: #e74c3c;
+}
+button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  font-weight: bold;
+  background: #1f6feb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #388bfd;
+}
